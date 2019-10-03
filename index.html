@@ -4,17 +4,20 @@
     
 </head>
 <html>
-    <body>
-        <table border>
+    <body><center>
+        <table>
+            <tr class="special2">
+                <td colspan="3"><h1>Color Picker</h1></td>
+            </tr>
             <tr class="special">
                 <td bgcolor="#d92626">RED</td>
                 <td bgcolor="#0f8a0f">GREEN</td>
                 <td bgcolor="#2445a8">BLUE</td>
             </tr>
             <tr>
-                <td><input type="range" min="0" max="128" value="64" class="slider" id="R"></td>
-                <td><input type="range" min="0" max="128" value="64" class="slider" id="G"></td>
-                <td><input type="range" min="0" max="128" value="64" class="slider" id="B"></td>
+                <td><input type="range" min="0" max="255" value="128" class="slider" id="R"></td>
+                <td><input type="range" min="0" max="255" value="128" class="slider" id="G"></td>
+                <td><input type="range" min="0" max="255" value="128" class="slider" id="B"></td>
             </tr>
                 <td id="outR" class="special2"></td>
                 <td id="outG" class="special2"></td>
@@ -27,6 +30,7 @@
                 <td colspan="3" rowspan="3"><div id="colorbox"></div></td>
             </tr>
         </table>
+        
         <script src="js/rgb.js"></script>
         
 
