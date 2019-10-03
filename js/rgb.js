@@ -1,26 +1,44 @@
-'use strict';
 
-//var convert = document.getElementById("boton1").addEventListener("click", prueba());
+var red = document.getElementById("R");
+var green = document.getElementById("G");
+var blue = document.getElementById("B");
+document.getElementById("outR").innerHTML = red.value;
+document.getElementById("outG").innerHTML = blue.value;
+document.getElementById("outB").innerHTML = red.value;
+document.getElementById("hex").innerHTML = "#808080";
+//document.getElementById("colorbox").innerHTML = "#808080";
 
-function rgb() { 
 
-  var r = document.getElementById("r").value;
-  var g = document.getElementById("g").value;
-  var b = document.getElementById("b").value;
+function hexa() {
+  var redS = parseInt(red.value).toString(16);
+  var greenS = parseInt(green.value).toString(16);
+  var blueS = parseInt(blue.value).toString(16);
 
-  r = parseInt(r);
-  g = parseInt(g);
-  b = parseInt(b);
-  //alert(r+g+b);
-
-  var resultado = r + g + b;
-  //alert(resultado);
+  if (red.value < 16)
+    redS = "0" + redS;
+  if (green.value < 16)
+    greenS = "0" + greenS;
+  if (blue.value < 16)
+    blueS = "0" + blueS;
   
-  document.getElementById("show").innerHTML = resultado;
-  
+  hex = "#" + redS + greenS + blueS;
+  document.getElementById("hex").innerHTML = hex;
+  document.documentElement.style.setProperty('--colores', hex);
 }
 
-function hex(h) {
-   return "000000000";
+red.oninput = function() {
+  red = document.getElementById("R");
+  document.getElementById("outR").innerHTML = red.value;
+  hexa();
+}
+green.oninput = function() {
+  green = document.getElementById("G");
+  document.getElementById("outG").innerHTML = green.value;
+  hexa();
+}
+blue.oninput = function() {
+  blue = document.getElementById("B");
+  document.getElementById("outB").innerHTML = blue.value;
+  hexa();
 }
 
