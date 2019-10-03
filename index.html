@@ -4,11 +4,23 @@
 </head>
 <html>
     <body>
-        R<input type="text" id="r"></input><br><br>
-        G<input type="text" id="g"></input><br><br>
-        B<input type="text" id="b"></input><br><br>
+        <table border>
+            <tr>
+                <td bgcolor="#d92626">RED</td>
+                <td bgcolor="#0f8a0f">GREEN</td>
+                <td bgcolor="#2445a8">BLUE</td>
+            </tr>
+        <tr>
+        <td><input type="text" id="r"></input></td>
+        <td><input type="text" id="g"></input></td>
+        <td><input type="text" id="b"></input></td>
+        </tr>
 
-        <input type="button" value="RGB" onclick="prueba()">
+        <p id="show">
+        <input type="button" value="RGB" onclick="rgb()">
+        </table>
+        
         <script src="js/rgb.js"></script>
+
     </body>
 </html>
