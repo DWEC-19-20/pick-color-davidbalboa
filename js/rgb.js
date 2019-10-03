@@ -1,7 +1,11 @@
 'use strict';
 
-/* Función que al pasar un valor RGB devuelva el resultado en representación hexadecimal
-*/
+//var convert = document.getElementById("boton1").addEventListener("click", prueba());
+
+function prueba() {
+  alert("hola");
+}
+
 function rgb(r,g,b) { 
   return "#000000";
 }
