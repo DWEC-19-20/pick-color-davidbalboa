@@ -10,7 +10,6 @@ document.getElementById("hex").innerHTML = "#808080";
 
 function join() {
     var hexadecimal = rgb(r.value, g.value, b.value);
-    alert(hexadecimal);
     document.getElementById("hex").innerHTML = hexadecimal;
     document.documentElement.style.setProperty('--colores', hexadecimal);
 }
