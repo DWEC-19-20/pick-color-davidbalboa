@@ -20,10 +20,6 @@ function rgb(r, g ,b) {
     return (hexa.toUpperCase(hexa));
 }
 
-function hexValors(r, g, b){
-  rgb(r, g, b);
-}
-
 function hex(h) { 
   h = " " + h;
   red = "";
