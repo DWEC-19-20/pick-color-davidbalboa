@@ -20,28 +20,34 @@ function rgb(r, g ,b) {
     return (hexa.toUpperCase(hexa));
 }
 
+function hexValors(r, g, b){
+  rgb(r, g, b);
+}
+
 function hex(h) { 
-  r = "";
+  h = " " + h;
+  red = "";
   for (i = 2; i < 4; i++){
-      r += h[i];
+      red += h[i];
   }
-  g = "";
+  green = "";
   for (i = 4; i < 6; i++){
-      g += h[i];
+      green += h[i];
   }
-  b = "";
+  blue = "";
   for (i = 6; i < 8; i++){
-      b += h[i];
+      blue += h[i];
   }
-  r = parseInt(r, 16);
-  g = parseInt(g, 16);
-  b = parseInt(b, 16);
 
-  r = onlyOneHex(r);
-  g = onlyOneHex(g);
-  b = onlyOneHex(b);
+  red = parseInt(red, 16);
+  green = parseInt(green, 16);
+  blue = parseInt(blue, 16);
 
-  var entero = "" + r + g + b;
+  red = onlyOneHex(red);
+  green = onlyOneHex(green);
+  blue = onlyOneHex(blue);
+
+  var entero = "" + red + "" + green + "" + blue;
   return(entero);
 }
 

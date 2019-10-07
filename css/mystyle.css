@@ -64,8 +64,16 @@ table {
     padding: 0.2em 1em 0.2em 1em;
   }
 
-  .boton {
-    
+  .btn1 {
+    background-color: transparent; 
+    color: black; 
+    border: 2px solid var(--colores);
+    border-radius: 6px;
+    transition-duration: 0.15s;
+  }
+  .btn1:hover {
+    background-color: var(--colores);
+    color: white;
   }
 
   .colors {
