@@ -37,7 +37,6 @@ function hex(h) {
   for (i = 6; i < 8; i++){
       blue += h[i];
   }
-
   red = parseInt(red, 16);
   green = parseInt(green, 16);
   blue = parseInt(blue, 16);
@@ -45,6 +44,10 @@ function hex(h) {
   red = isNotANumber(red);
   green = isNotANumber(green);
   blue = isNotANumber(blue);
+
+  red = outOfRangeHex(red);
+  green = outOfRangeHex(green);
+  blue = outOfRangeHex(blue);
 
   red = onlyOneHex(red);
   green = onlyOneHex(green);
@@ -55,6 +58,7 @@ function hex(h) {
 }
 
 function onlyOneHex(x){
+  x = parseInt(x, 10);
   if (x < 10)
     x = "00" + x; 
   else if (x < 100)
@@ -73,6 +77,15 @@ function onlyOneDigit(x) {
     i++;
   }
   return(x);
+}
+
+function outOfRangeHex(x) {
+  x = parseInt(x, 10);
+  if (x > 255)
+    x = "255";
+  else if (x < 0)
+    x = "000";
+  return (x);
 }
 
 function outOfRange(x) {

@@ -16,7 +16,7 @@ function join() {
     }
     else {
         var hexadecimal = rgb(r.value, g.value, b.value);
-        var valor = hex(rgb(r.value, g.value, b.value));
+        var valor = hex(hexadecimal);
     }
     document.getElementById("hex").innerHTML = valor;
     document.documentElement.style.setProperty('--colores', hexadecimal);
