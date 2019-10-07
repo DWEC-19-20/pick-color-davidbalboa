@@ -1,5 +1,4 @@
-function rgb(r, g ,b) { //convert to hexa
-  
+function rgb(r, g ,b) {
   r = parseInt(r);
   g = parseInt(g);
   b = parseInt(b);
@@ -21,8 +20,7 @@ function rgb(r, g ,b) { //convert to hexa
     return (hexa.toUpperCase(hexa));
 }
 
-function hex(h) { //convert to int
-  //alert(h[2]);
+function hex(h) { 
   r = "";
   for (i = 2; i < 4; i++){
       r += h[i];
@@ -44,7 +42,6 @@ function hex(h) { //convert to int
   b = onlyOneHex(b);
 
   var entero = "" + r + g + b;
-  //alert(entero);
   return(entero);
 }
 
@@ -70,7 +67,6 @@ function onlyOneDigit(x) {
 }
 
 function outOfRange(x) {
-  //valores fuera de rango
   if (x > 255)
     x = "FF";
   else if (x < 0)
