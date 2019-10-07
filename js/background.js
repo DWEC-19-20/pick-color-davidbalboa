@@ -6,6 +6,7 @@ document.getElementById("outR").innerHTML = r.value;
 document.getElementById("outG").innerHTML = g.value;
 document.getElementById("outB").innerHTML = b.value;
 document.getElementById("hex").innerHTML = "#808080";
+document.getElementById("type").innerHTML = "<h2>Decimal</h2> to Hexadecimal";
 
 
 function join() {
@@ -22,11 +23,14 @@ function join() {
 }
 
 function change(){
-    if (def == 0)
+    if (def == 0){
+        document.getElementById("type").innerHTML = "<h2>Hexadecimal</h2> to Decimal";
         def = 1;
-    else   
+    }
+    else {
+        document.getElementById("type").innerHTML = "<h2>Decimal</h2> to Hexadecimal";
         def = 0;
-
+    }
     join();
     r.oninput();
     g.oninput();

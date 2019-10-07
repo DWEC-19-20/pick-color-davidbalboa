@@ -3,6 +3,9 @@ function rgb(r, g ,b) {
   g = parseInt(g);
   b = parseInt(b);
 
+  r = isNotANumber(r);
+  g = isNotANumber(g);
+  b = isNotANumber(b);
 
   r = outOfRange(r);
   g = outOfRange(g);
@@ -39,11 +42,15 @@ function hex(h) {
   green = parseInt(green, 16);
   blue = parseInt(blue, 16);
 
+  red = isNotANumber(red);
+  green = isNotANumber(green);
+  blue = isNotANumber(blue);
+
   red = onlyOneHex(red);
   green = onlyOneHex(green);
   blue = onlyOneHex(blue);
 
-  var entero = "" + red + "" + green + "" + blue;
+  var entero = "" + red + green + blue;
   return(entero);
 }
 
@@ -69,10 +76,17 @@ function onlyOneDigit(x) {
 }
 
 function outOfRange(x) {
+  x = parseInt(x);
   if (x > 255)
     x = "FF";
   else if (x < 0)
     x = "0";
+  return (x);
+}
+
+function isNotANumber(x){
+  if (Number.isNaN(x))
+    x = 0;
   return (x);
 }
 

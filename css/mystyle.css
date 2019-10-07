@@ -2,7 +2,6 @@
     --colores: #808080;
 }
 
-
 .special {
     color: white;
     text-align: center;
@@ -14,8 +13,24 @@
     font: 15px monaco, monospace;
 }
 
+.special3 {
+  font-family: 'Orbitron';
+  font-size: 12px;
+  text-align: center;
+  font-family: 'Bai Jamjuree';
+}
+
 h1 {
-    font-family: 'Orbitron';font-size: 22px;
+    font-family: 'Orbitron';
+    font-size: 22px;
+    display: inline;
+}
+
+h2 {
+  font-family: 'Orbitron';
+  font-size: 15px;
+  display: inline;
+  color: red;
 }
 
 table {
@@ -28,11 +43,6 @@ table {
   margin: 5px;
   padding: 15px;
   border: 1px solid #eee;
-  /*max-width: 85%;
-  max-width: -webkit-calc(100% - 42px);
-  max-width: -moz-calc(100% - 42px);
-  max-width: calc(100% - 42px);
-  max-height: 300px;*/
   word-wrap: break-word;
   border-bottom-color: #ddd;
   -webkit-box-shadow: 0 1px 3px #eee;
@@ -70,19 +80,32 @@ table {
     border: 2px solid var(--colores);
     border-radius: 6px;
     transition-duration: 0.15s;
+    font-family: 'Bai Jamjuree';
   }
+
   .btn1:hover {
     background-color: var(--colores);
     color: white;
+    font-family: 'Bai Jamjuree';
+  }
+
+  .btn2 {
+    background-color: var(--colores); 
+    color: white;
+    border-radius: 6px;
+    border: inherit;
+  }
+
+  .extra {
+    color: red;
+    font: 15px monaco, monospace;
   }
 
   .colors {
     border-bottom-color: #ddd;
-    -webkit-box-shadow: 0 1px 3px #eee;
-    -moz-box-shadow: 0 1px 3px #eee;
-    box-shadow: 0 1px 3px #eee;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 0.4em;
-    font-family: 'Bai Jamjuree';font-size: 0.8em;
+    font-family: 'Bai Jamjuree';
+    font-size: 0.8em;
   }
