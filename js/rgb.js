@@ -24,7 +24,7 @@ function rgb(r, g ,b) {
 }
 
 function hex(h) { 
-  h = " " + h;
+  //h = " " + h;
   red = "";
   for (i = 2; i < 4; i++){
       red += h[i];

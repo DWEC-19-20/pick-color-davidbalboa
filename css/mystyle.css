@@ -64,48 +64,49 @@ table {
     transition: opacity .2s;
   }
 
-  #colorbox {
-    background-color: var(--colores);
-    padding-bottom: 5em;
-    border-radius: 0.2em;
-  }
-  
-  td {
-    padding: 0.2em 1em 0.2em 1em;
-  }
+#colorbox {
+  background-color: var(--colores);
+  padding-bottom: 5em;
+  border-radius: 0.2em;
+}
 
-  .btn1 {
-    background-color: transparent; 
-    color: black; 
-    border: 2px solid var(--colores);
-    border-radius: 6px;
-    transition-duration: 0.15s;
-    font-family: 'Bai Jamjuree';
-  }
+td {
+  padding: 0.2em 1em 0.2em 1em;
+}
 
-  .btn1:hover {
-    background-color: var(--colores);
-    color: white;
-    font-family: 'Bai Jamjuree';
-  }
+.btn1 {
+  background-color: transparent; 
+  color: black; 
+  border: 2px solid var(--colores);
+  border-radius: 6px;
+  transition-duration: 0.15s;
+  font-family: 'Bai Jamjuree';
+}
 
-  .btn2 {
-    background-color: var(--colores); 
-    color: white;
-    border-radius: 6px;
-    border: inherit;
-  }
+.btn1:hover {
+  background-color: var(--colores);
+  color: white;
+  font-family: 'Bai Jamjuree';
+}
 
-  .extra {
-    color: red;
-    font: 15px monaco, monospace;
-  }
+.btn2 {
+  background-color: var(--colores); 
+  color: white;
+  border-radius: 6px;
+  border: inherit;
+}
 
-  .colors {
-    border-bottom-color: #ddd;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 0.4em;
-    font-family: 'Bai Jamjuree';
-    font-size: 0.8em;
-  }
+.extra {
+  float: left;
+  color: red;
+  font: 15px monaco, monospace;
+}
+
+.colors {
+  border-bottom-color: #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 0.4em;
+  font-family: 'Bai Jamjuree';
+  font-size: 0.8em;
+}
