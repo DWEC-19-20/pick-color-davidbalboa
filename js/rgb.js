@@ -10,7 +10,6 @@ function rgb(r, g ,b) {
 }
 
 function checkRGB(r, g, b){
-  var r, g, b;
   /* Pasamos el valor de r a un int y 
   comprobamos que esté dentro del rango */
   r = outOfRange(parseInt(r));
@@ -28,7 +27,7 @@ function checkRGB(r, g, b){
 /* Comprobamos si tiene solo un digito, 
 en caso de ser así añadimos 0 */
 function onlyOneDigit(x) {
-  letras = "abcdef";
+  var letras = "abcdef";
   var i = 0;
   if (x < 10 && x >= 0)
     return(x = "0" + x);
@@ -42,7 +41,7 @@ function onlyOneDigit(x) {
 
 /* Comprobamos que está dentro del rango */
 function outOfRange(x) {
-  var x = parseInt(x);
+  x = parseInt(x);
   if (x > 255)
     x = "FF";
   else if (x < 0)
@@ -86,7 +85,7 @@ function checkHEX(h) {
 
 /* Comprueba si solo tiene un digito */
 function onlyOneHex(x){
-  var x = parseInt(x, 10);
+  x = parseInt(x, 10);
   if (x < 10)
     x = "00" + x; 
   else if (x < 100)
@@ -96,7 +95,7 @@ function onlyOneHex(x){
 
 /* Comprueba si esta fuera de rango */
 function outOfRangeHex(x) {
-  var x = parseInt(x, 10);
+  x = parseInt(x, 10);
   if (x > 255)
     x = "255";
   else if (x < 0)
