@@ -2,35 +2,30 @@
     --colores: #808080;
 }
 
-.special {
-    color: white;
-    text-align: center;
-    border-radius: 1em;
-}
-
-.special2 {
-    text-align: center;
-    font: 15px monaco, monospace;
-}
-
-.special3 {
-  font-family: 'Orbitron';
-  font-size: 12px;
+.menu {
   text-align: center;
-  font-family: 'Bai Jamjuree';
 }
 
 h1 {
-    font-family: 'Orbitron';
-    font-size: 22px;
-    display: inline;
+  font-family: 'Orbitron';
+  font-size: 22px;
+  display: inline;
 }
 
-h2 {
-  font-family: 'Orbitron';
-  font-size: 15px;
-  display: inline;
+a sup {
   color: red;
+  font: 10px monaco, monospace;
+}
+
+.colors td{
+  border-bottom-color: #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 0.3em;
+  font-family: 'Bai Jamjuree';
+  font-size: 0.8em;
+  color: white;
+  text-align: center;
 }
 
 table {
@@ -53,59 +48,28 @@ table {
   border-radius: 3px;
 }
 
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    border-radius: 1em;
-    background: #b0b0b0;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-
 #colorbox {
   background-color: var(--colores);
   padding-bottom: 5em;
   border-radius: 0.2em;
 }
 
-td {
-  padding: 0.2em 1em 0.2em 1em;
-}
-
-.btn1 {
-  background-color: transparent; 
-  color: black; 
-  border: 2px solid var(--colores);
-  border-radius: 6px;
-  transition-duration: 0.15s;
-  font-family: 'Bai Jamjuree';
-}
-
-.btn1:hover {
-  background-color: var(--colores);
-  color: white;
-  font-family: 'Bai Jamjuree';
-}
-
-.btn2 {
+.btn {
   background-color: var(--colores); 
   color: white;
   border-radius: 6px;
   border: inherit;
 }
 
-.extra {
-  color: red;
-  font: 15px monaco, monospace;
+.hex{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.colors {
-  border-bottom-color: #ddd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 0.4em;
+input {
+  text-align: center;
+  background: none;
+  border: none;
   font-family: 'Bai Jamjuree';
-  font-size: 0.8em;
+  font-size: 1em;
 }

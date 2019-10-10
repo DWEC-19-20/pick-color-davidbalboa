@@ -7,21 +7,23 @@
 <html>
     <body><center>
         <table>
-            <tr class="special2">
-                <td colspan="3"><h1>C O L O R &nbsp;&nbsp;&nbsp;P I C K E R<a class="extra"><sup> manual!!</sup></a></h1></td>
+            <tr class="menu">
+                <td colspan="3"><h1>C O L O R &nbsp;&nbsp;&nbsp;P I C K E R<a><sup> manual!!</sup></a></h1></td>
             </tr>
-            <tr class="special">
-                <td bgcolor="#d92626" class="colors">R E D</td>
-                <td bgcolor="#0f8a0f" class="colors">G R E E N</td>
-                <td bgcolor="#2445a8" class="colors">B L U E</td>
-            </tr>
-            <tr>
-                <td><input type="text" maxlength="3" id="R"></td>
-                <td><input type="text" maxlength="3" id="G"></td>
-                <td><input type="text" maxlength="3" id="B"></td>
+            <tr class="colors">
+                <td bgcolor="#d92626">R E D</td>
+                <td bgcolor="#0f8a0f">G R E E N</td>
+                <td bgcolor="#2445a8">B L U E</td>
             </tr>
             <tr>
-                <td colspan="3" class="special2"><input type="text" name="hex" id="hex"></input></td>
+                <td><input type="text" maxlength="3" placeholder="128" id="R" onkeypress='return validaNum(event)'></td>
+                <td><input type="text" maxlength="3" placeholder="128" id="G" onkeypress='return validaNum(event)'></td>
+                <td><input type="text" maxlength="3" placeholder="128" id="B" onkeypress='return validaNum(event)'></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="hex">
+                    #<input type="text" placeholder="808080" id="hex" maxlength="6" size="7" onkeypress='return validaHex(event)'/>
+                </td>
             </tr>
             <tr>
                 <td colspan="3"><div id="colorbox"></div></td>
@@ -29,7 +31,7 @@
         </table>
         <table>
             <tr>
-                <td class="colors">go <a href="index.html"><input type="button" value="back" class="btn2"></a></td>
+                <td class="colors">go <a href="index.html"><input type="button" value="back" class="btn"></a></td>
             </tr>
         </table>
         <script src="js/backgroundManual.js"></script>
