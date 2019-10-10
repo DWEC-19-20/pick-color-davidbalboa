@@ -3,10 +3,6 @@ function rgb(r, g ,b) {
   g = parseInt(g);
   b = parseInt(b);
 
-  r = isNotANumber(r);
-  g = isNotANumber(g);
-  b = isNotANumber(b);
-
   r = outOfRange(r);
   g = outOfRange(g);
   b = outOfRange(b);
@@ -40,10 +36,6 @@ function hex(h) {
   red = parseInt(red, 16);
   green = parseInt(green, 16);
   blue = parseInt(blue, 16);
-
-  red = isNotANumber(red);
-  green = isNotANumber(green);
-  blue = isNotANumber(blue);
 
   red = outOfRangeHex(red);
   green = outOfRangeHex(green);
@@ -94,12 +86,6 @@ function outOfRange(x) {
     x = "FF";
   else if (x < 0)
     x = "0";
-  return (x);
-}
-
-function isNotANumber(x){
-  if (Number.isNaN(x))
-    x = 0;
   return (x);
 }
 
